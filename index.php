@@ -8,37 +8,37 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-  td {
-    color: white;
-  }
+    td {
+      color: white;
+    }
 
-  body {
-    font-family: 'Times New Roman', Times, serif;
-  }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+    }
 
-  .formulario {
-    border: none;
-    display: block;
-    text-align: center;
+    .formulario {
+      border: none;
+      display: block;
+      text-align: center;
 
-  }
+    }
 
-  thead {
-    background-color: pink;
-  }
+    thead {
+      background-color: pink;
+    }
 
-  .tabela {
-    background-color: gray;
-    margin-top: 20px;
-  }
+    .tabela {
+      background-color: gray;
+      margin-top: 20px;
+    }
 
-  label {
-    color: blue;
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline;
-    justify-content: space-evenly;
+    label {
+      color: blue;
+      font-family: Arial, Helvetica, sans-serif;
+      display: inline;
+      justify-content: space-evenly;
 
-  }
+    }
   </style>
 
 </head>
@@ -91,12 +91,18 @@
 
     <?php
 
-    //include_once "dados.php";
+    $bdhost = 'localhost';
+    $bdusuario = 'root';
+    $bdsenha = '';
+    $bdbandodados = 'financas';
 
-    include_once "conectar.php";
+
+    $conexao = new mysqli($bdhost, $bdusuario, $bdsenha, $bdbandodados);
+
+    //include_once "conectar.php";
 
     if (isset($_POST['submit']) && !empty($_POST['nmembro']) && !empty($_POST['ncategoria']) && !empty($_POST['ntipo'])) {
-  
+
       $datas = $_POST['ndata'];
       $osmembros = $_POST['nmembro'];
       $valores = $_POST['nvalor'];
