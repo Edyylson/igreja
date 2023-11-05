@@ -8,97 +8,83 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    td {
-      color: white;
-    }
+  td {
+    color: white;
+  }
 
-    #bt_enviar {
-      width: 70px;
-      margin-top: 30px;
-    }
+  #bt_enviar {
+    width: 70px;
+    margin-top: 30px;
+  }
 
-    hover #bt_enviar {
-      color: blue;
-    }
+  hover #bt_enviar {
+    color: blue;
+  }
 
-    input {
-      height: 20px;
-      width: 40vw;
-      margin: auto;
-      margin-inline: 20px;
-      margin-bottom: 10px;
-    }
+  input {
+    height: 20px;
+    width: 20vw;
+    margin: auto;
+    margin-inline: 10px;
+    margin-bottom: 10px;
+  }
 
-    .inputcaixaA {
-      display: inline-block;
+  .inputcaixaA {
+    display: inline-block;
 
-    }
+  }
 
-    .inputcaixaB {
-      display: inline-block;
-    }
+  .inputcaixaB {
+    display: inline-block;
+  }
 
-    .inputcaixaC {
-      display: inline-block;
-    }
-
-
-    a {
-      color: white;
-    }
-
-    .bteditar {
-      background-color: blue;
-    }
-
-    .btexcluir {
-      background-color: red;
-    }
-
-    body {
-      font-family: 'Times New Roman', Times, serif;
-      border: 2px solid orange;
-      width: 99%;
+  .inputcaixaC {
+    display: inline-block;
+  }
 
 
-    }
+  a {
+    color: white;
+  }
 
-    .formulario {
-      border: 1px solid blue;
-      text-align: center;
-      margin-top: 30px;
+  .bteditar {
+    background-color: blue;
+  }
 
-    }
+  .btexcluir {
+    background-color: red;
+  }
 
-    section {
-      border: 1px solid red;
+  body {
+    font-family: 'Times New Roman', Times, serif;
 
-    }
+  }
 
-    thead {
-      background-color: pink;
-      height: 2em;
-      font-size: 20px;
-      font-weight: bold;
-    }
+  .formulario {
 
-    .tabela {
-      background-color: gray;
-      margin-top: 60px;
-      font-size: 18px;
-      border-collapse: collapse;
-      border: 1px solid black;
-      margin: auto;
+    text-align: center;
+    margin-top: 30px;
 
-    }
+  }
 
-    header {
-      border: 1px solid gray;
-    }
 
-    main {
-      border: 1px solid green;
-    }
+  thead {
+    background-color: pink;
+    height: 2em;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .tabela {
+    background-color: gray;
+    margin-top: 60px;
+    font-size: 18px;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: auto;
+
+
+  }
   </style>
 
 </head>
@@ -131,7 +117,8 @@
 
         <?php //<label for="sobrenome">Membro</label>
         ?>
-        <input class="inputcaixaA" type="text" name="nmembro" id="id_membro" placeholder="Digite seu Nome" required value=""><br>
+        <input class="inputcaixaA" type="text" name="nmembro" id="id_membro" placeholder="Digite seu Nome" required
+          value=""><br>
 
         <?php //<label for="valor">Valor</label>
         ?>
@@ -139,7 +126,8 @@
 
         <?php //<label for="categoria">Categoria</label>
         ?>
-        <input class="inputcaixaB" type="text" name="ncategoria" id="id_categoria" placeholder="Dizimo ou Oferta?" required><br>
+        <input class="inputcaixaB" type="text" name="ncategoria" id="id_categoria" placeholder="Dizimo ou Oferta?"
+          required><br>
 
         <?php //<label for="tipo">Tipo</label>
         ?>
