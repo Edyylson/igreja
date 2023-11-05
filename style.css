@@ -6,14 +6,6 @@
 }
 
 
-table {
-  border: 1px solid black;
-  margin: auto;
-  border-collapse: collapse;
-  width: 70vw;
-
-}
-
 td {
   border: 1px solid black;
   margin: auto;
